@@ -17,7 +17,7 @@ const makeGalleryItemEl = ({ preview, description, original }) => {
 };
 
 const galleryList = galleryItems.map(makeGalleryItemEl).join("");
-console.log(galleryItems);
+
 
 const gallery = document.querySelector(".gallery");
 
@@ -27,3 +27,9 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captoinsDelay: 250,
 });
+
+
+import SimpleLightbox from "simplelightbox";
+
+import "simplelightbox/dist/simple-lightbox.min.css";
+
